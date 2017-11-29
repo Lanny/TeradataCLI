@@ -14,7 +14,7 @@ public class App {
 			System.exit(1);
 		}
 
-		String dburl = "jdbc:teradata://C2T.WELLSFARGO.COM/DATABASE=DVU_111,LOGMECH=LDAP";
+		String dburl = "";
 		try {
 			Connection conn = DriverManager.getConnection(dburl, "", "");
 			PreparedStatement stmt = conn.prepareStatement("SELECT 1");
